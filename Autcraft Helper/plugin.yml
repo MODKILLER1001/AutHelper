@@ -1,0 +1,36 @@
+name: AutcraftHelper
+main: me.raum.autcraft.AutcraftHelper
+version: 0.0.9
+description: The Autcraft Helper Plugin
+author: raum
+depend: [Vault, Essentials]
+
+commands:
+   ach:
+      aliases: [autcraft, autcrafthelper]
+      description: The main command for Autcraft Helper
+      usage: /ach (options)
+   splitchat:
+      aliases: [split, linesplit, splitline]
+      description: Set a delimter for chat, to help break it up!;
+      usage: /splitline
+   channel:
+      aliases: [chan]
+      description: The command for channels!
+      usage: /channel
+   chat:
+      description: Chat in the main channel, without leaving your current one.
+      usage: /chat
+permissions:
+   autcraft.admin:
+      description: Default admin permission
+      default: op
+   autcraft.channel.join:
+      description: Allows someone to join a channel.
+      default: op
+   autcraft.channel.admin:
+      description: Admin permission to channels
+      default: op
+   autcraft.channel.create:
+      description: Be able to create permissions
+      default: op
